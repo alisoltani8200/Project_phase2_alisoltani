@@ -17,9 +17,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Pane pane = FXMLLoader.load(getClass().getResource("/FXML/FirstPage.fxml"));
-        scene = new Scene(pane, 1000, 800);
-        stage.setTitle("Shabihsaze");
+        Pane pane = FXMLLoader.load(getClass().getResource("/FXML/CreateAccount.fxml"));
+        scene = new Scene(pane, 1200, 800);
+        String scc= "/CSS/CreateAccount.css";
+        scene.getStylesheets().add(scc);
+        stage.setTitle("Shwitter");
         stage.setScene(scene);
         stage.show();
     }
