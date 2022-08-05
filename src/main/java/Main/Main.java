@@ -19,7 +19,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         Pane pane = FXMLLoader.load(getClass().getResource("/FXML/CreateAccount.fxml"));
         scene = new Scene(pane, 1200, 800);
-        String scc= "/CSS/CreateAccount.css";
+        String scc= String.valueOf(this.getClass().getResource("/CSS/CreateAccount.css"));
         scene.getStylesheets().add(scc);
         stage.setTitle("Shwitter");
         stage.setScene(scene);
