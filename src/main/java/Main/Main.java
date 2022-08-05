@@ -21,6 +21,7 @@ public class Main extends Application {
         scene = new Scene(pane, 1200, 800);
         String scc= String.valueOf(this.getClass().getResource("/CSS/CreateAccount.css"));
         scene.getStylesheets().add(scc);
+        String ali="1";
         stage.setTitle("Shwitter");
         stage.setScene(scene);
         stage.show();
