@@ -80,7 +80,7 @@ public class CreateNormalAccountController {
                     }
 
                     Pane pane=null;
-                    pane= FXMLLoader.load(getClass().getResource("/FXML/Menu.fxml"));
+                    pane= FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
                     Main.scene.setRoot(pane);
                 }
                 catch (IOException e) {

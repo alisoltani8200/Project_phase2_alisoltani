@@ -1,6 +1,6 @@
 package Main;
 
-import Main.Controller.AccountType;
+import Main.Model.AccountType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -52,6 +52,9 @@ public class CreateAccountController implements Initializable {
         accountTypeCombo.setItems(getAccountTypeList());
     }
 
-    public void back(MouseEvent mouseEvent) {
+    public void back(MouseEvent mouseEvent) throws IOException {
+        Pane pane=null;
+        pane= FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
+        Main.scene.setRoot(pane);
     }
 }

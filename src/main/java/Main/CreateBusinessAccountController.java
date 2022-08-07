@@ -1,6 +1,6 @@
 package Main;
 
-import Main.Controller.BusinessType;
+import Main.Model.BusinessType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -85,7 +85,7 @@ public class CreateBusinessAccountController implements Initializable {
                     }
 
                     Pane pane=null;
-                    pane= FXMLLoader.load(getClass().getResource("/FXML/Menu.fxml"));
+                    pane= FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
                     Main.scene.setRoot(pane);
                 }
                 catch (IOException e) {
